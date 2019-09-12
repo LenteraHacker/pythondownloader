@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# pytube v1.0
-# Coded by: github.com/thelinuxchoice/pytube
+
 import requests, json, os, sys, signal, platform
 
 if platform.system().lower() == "windows":
@@ -10,9 +8,9 @@ if platform.system().lower() == "windows":
 default_filename='youtube_file'
 if len(sys.argv) != 2:
   print('\n    \033[1;31mpy\033[0m\033[1;77mtube v1.0\033[0m')
-  print('    \033[1;77mcoded by:\033[1;31m github.com/thelinuxchoice/pytube\033[0m\n')
-  print('\n\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m\033[1;77m Usage: pytube.py youtube_url_code\033[0m')
-  print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m\033[1;93m E.g.: python pytube.py Nd6qN167wKo\033[0m')
+  print('    \033[1;77mcoded by:\033[1;31m github.com/LenteraHacker\033[0m\n')
+  print('\n\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m\033[1;77m Pemakaian: decryptbabi.py youtube_url_kode\033[0m')
+  print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m\033[1;93m E.g.: python decryptbabi.py Nd6qN167wKo\033[0m')
   exit()
 
 user_agent = 'Mozilla/5.0 (X11; Linux i686; rv:52.0) Gecko/20100101 Firefox/52.0'
@@ -112,7 +110,7 @@ while True:
  list_url=[]
  format_types()
 
- choose=int(input('\n\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Choose an option to download: \033[0m'))
+ choose=int(input('\n\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Pilih pilhan untuk download: \033[0m'))
 
  if choose in range(len(list_type)):
 
@@ -127,10 +125,10 @@ while True:
 
   print('\033[1;77m 1: Python requests\033[0m')
   print('\033[1;77m 2: Wget\033[0m')
-  download_option=int(input('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Download using: \033[0m'))
+  download_option=int(input('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Download menggunakan: \033[0m'))
 
   if download_option == 1:
-    print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Downloading, please wait, it can take a long time...\033[0m')
+    print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Downloading, tunggu sebentar...\033[0m')
     download(choose)
 
   elif download_option == 2:
@@ -138,12 +136,12 @@ while True:
     download_wget(choose)
 
   else:
-    print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Downloading using Python requests, please wait, it can take a long time...\033[0m')
+    print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m] Downloading menggunakan Python requests, mohon bersabar...\033[0m')
     download(choose)
    
  elif choose == 99:
    exit()
  else:
-   print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m \033[1;93mInvalid Option!\033[0m')
+   print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m \033[1;93mPilihan tidak diketahui!\033[0m')
 
 
