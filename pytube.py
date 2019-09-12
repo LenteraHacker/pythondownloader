@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# pytube v1.0
-# Coded by: github.com/thelinuxchoice/pytube
+
 import requests, json, os, sys, signal, platform
 
 if platform.system().lower() == "windows":
@@ -10,7 +8,7 @@ if platform.system().lower() == "windows":
 default_filename='youtube_file'
 if len(sys.argv) != 2:
   print('\n    \033[1;31mpy\033[0m\033[1;77mtube v1.0\033[0m')
-  print('    \033[1;77mcoded by:\033[1;31m github.com/thelinuxchoice/pytube\033[0m\n')
+  print('    \033[1;77mcoded by:\033[1;31m github.com/LenteraHacker\033[0m\n')
   print('\n\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m\033[1;77m Usage: pytube.py youtube_url_code\033[0m')
   print('\033[1;77m[\033[0m\033[1;31m+\033[0m\033[1;77m]\033[0m\033[1;93m E.g.: python pytube.py Nd6qN167wKo\033[0m')
   exit()
